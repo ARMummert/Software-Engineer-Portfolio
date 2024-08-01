@@ -19,8 +19,8 @@ export default function Home() {
       </div>
       </section>
       <section id="projects" className={styles.projects}>
-        <h2>Projects</h2>
-        <ProjectComponent/>
+        <h2 className={styles.projectheader}>Projects</h2>
+        <div className={styles.projectcomponent}><ProjectComponent/></div>
       </section>
       <section id="about" className={styles.about}>
         <h2>About</h2>

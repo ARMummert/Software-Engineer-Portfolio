@@ -32,15 +32,18 @@ pool.connect((err, client, release) => {
 });
 
 app.get('/api/projects', async (req, res) => {
-  try {
-    const { rows } = await pool.query('SELECT * FROM projects');
-    res.json(rows);
-  } catch (err) {
-    console.error('Error executing query', err.stack);
-    res.status(500).send('Error executing query');
-  }
-});
-
+    try {
+      const client = await pool.connect();
+      const result = await client.query('SELECT * FROM projects'); // Adjust the query as needed
+      const data = result.rows;
+      client.release();
+      res.json(data);
+    } catch (err) {
+      console.error('Error fetching data', err);
+      res.status(500).send('Error fetching data');
+    }
+  });
+  
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
