@@ -1,5 +1,10 @@
 
+/* globals.css
+   SPA version 1.0 - 2024 - Amy Mummert - All Rights Reserved
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --max-width: 1100px;
@@ -110,7 +115,6 @@ a {
 }
 html, body {
   scroll-behavior: smooth;
-  background-color: black;
 }
 
 .title {
@@ -118,4 +122,70 @@ html, body {
   font-weight: 700;
   margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 8vh;
+  padding: 1rem 2rem;
+  background-color: black;
+  font-size: 20px;
+  text-transform: uppercase; 
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #71C9CF, #45B4D6, #327CBD, #775FA8); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 100;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--tile-start-rgb), 0.5),
+    rgba(var(--tile-end-rgb), 0.5)
+  );
+  box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
+  transition: background 200ms, border 200ms;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: 1px solid rgba(var(--foreground-rgb), 0.3);
+  border-radius: 4px;
+  box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
+  transition: background 200ms, border 200ms;
+ 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase; 
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #71C9CF, #45B4D6, #327CBD, #775FA8); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon {
+  margin-left: 10px;
+
 }

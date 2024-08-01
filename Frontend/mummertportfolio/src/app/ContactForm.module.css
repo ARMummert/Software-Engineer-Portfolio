@@ -1,0 +1,89 @@
+/* ContactForm.module.css 
+   SPA version 1.0 - 2024 - Amy Mummert - All Rights Reserved
+*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  max-width: 100%;
+  width: var(--max-width);
+}
+
+.form input,    
+.form textarea {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(var(--foreground-rgb), 0.3);
+  box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
+  transition: background 200ms, border 200ms;
+}
+
+.form input:focus,
+.form textarea:focus {
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--tile-start-rgb), 0.3),
+    rgba(var(--tile-end-rgb), 0.3)
+  );
+  border: 1px solid rgba(var(--foreground-rgb), 0.5);
+}
+
+.form button {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(var(--foreground-rgb), 0.3);
+  background: linear-gradient(to right, #71C9CF, #45B4D6, #327CBD, #775FA8); 
+  box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
+  transition: background 200ms, border 200ms;
+}
+
+.form button:hover {
+    background: black;
+    border: 1px solid rgba(var(--foreground-rgb), 0.5);
+  
+}
+
+.form button:active {
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--tile-start-rgb), 0.1),
+    rgba(var(--tile-end-rgb), 0.1)
+  );
+  border: 1px solid rgba(var(--foreground-rgb), 0.7);
+}
+
+.name {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.email {
+    display: flex;
+}
+
+.message {
+    display: flex;
+    height: 6rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    text-transform: none;
+}
+
+.name {
+    align-self: center;
+    justify-content: center;
+    color: white;
+}
+.error {
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+}

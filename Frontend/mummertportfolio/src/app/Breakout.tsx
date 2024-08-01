@@ -34,16 +34,15 @@ const Breakout: React.FC = () => {
     document.addEventListener('keydown', keyDownHandler, false);
     document.addEventListener('keyup', keyUpHandler, false);
 
-    // Cleanup event listeners on component unmount
+   
     return () => {
       document.removeEventListener('keydown', keyDownHandler);
       document.removeEventListener('keyup', keyUpHandler);
     };
   }, []);
 
-  // Collision detection and other game logic here...
 
-  return <canvas ref={canvasRef} width="480" height="320"></canvas>;
+  return <canvas className="breakout"ref={canvasRef} width="480" height="320"></canvas>;
 };
 
 export default Breakout;
