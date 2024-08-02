@@ -27,35 +27,19 @@ const ProjectComponent: React.FC = () => {
     fetchProjects();
   }, []);
 
-  const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  };
-
   return (
-    <div className={styles.scrollContainer}>
-      <button className={`${styles.arrow} ${styles.arrowLeft}`} onClick={scrollLeft}>
-        &#9664;
-      </button>
-      <div className={styles.projectWrapper} ref={scrollContainerRef}>
+    <div className={styles.projectContainer}>
+      <div className={styles.projectWrapper}>
         {projects.map((project) => (
-          <div key={project.id} className={styles.projectComponent}>
+          <div className={styles.singleproject} key={project.id}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
           </div>
         ))}
       </div>
-      <button className={`${styles.arrow} ${styles.arrowRight}`} onClick={scrollRight}>
-        &#9654;
-      </button>
+      <div></div>
     </div>
+    
   );
 };
 
