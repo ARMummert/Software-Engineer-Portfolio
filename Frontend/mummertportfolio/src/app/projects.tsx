@@ -7,6 +7,7 @@ interface Project {
   id: number;
   name: string;
   description: string;
+  image_url: string;
 }
 
 const ProjectComponent: React.FC = () => {
@@ -33,7 +34,7 @@ const ProjectComponent: React.FC = () => {
         {projects.map((project) => (
           <div className={styles.singleproject} key={project.id}>
             <h3>{project.name}</h3>
-            <p>{project.description}</p>
+            <p>{project.description}</p>   
           </div>
         ))}
       </div>

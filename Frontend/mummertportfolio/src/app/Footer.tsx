@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import styles from './page.module.css';
 
 const Footer = ({ children }: { children: ReactNode }) => {
     const [showScroll, setShowScroll] = useState(false);
@@ -42,10 +43,10 @@ const Footer = ({ children }: { children: ReactNode }) => {
           </p>
           <div>
             <a href="https://linkedin.com/in/armummert" aria-label="LinkedIn">
-              <FontAwesomeIcon className="icon" icon={faLinkedin} />
+              <FontAwesomeIcon className={styles.icon3} icon={faLinkedin} />
             </a>
             <a href="https://github.com/ARMummert" aria-label="GitHub">
-              <FontAwesomeIcon className="icon" icon={faGithub} />
+              <FontAwesomeIcon className={styles.icon4} icon={faGithub} />
             </a>
           </div>
         </footer>
