@@ -458,4 +458,10 @@
     background: linear-gradient(to right, #775FA8, #327CBD, #45B4D6, #71C9CF);
   }
 
+  .projectImage {
+    width: 300px;
+    height: 200px;
+    
+    margin-top: 50px;
+  }
  

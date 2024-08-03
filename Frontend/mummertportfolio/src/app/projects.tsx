@@ -8,9 +8,17 @@ interface Project {
   name: string;
   description: string;
   image_url: string;
-  demoUrl: string;
-  githubUrl: string;
+  demo_url: string;
+  github_url: string;
 }
+
+const formatUrl = (url: string) => {
+  if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    return `https://${url}`;
+  }
+  return url;
+};
+
 
 const ProjectComponent: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -37,13 +45,14 @@ const ProjectComponent: React.FC = () => {
         <div className={styles.singleproject} key={project.id}>
           <h3>{project.name}</h3>
           <p>{project.description}</p>
+          <img className={styles.projectImage} src={project.image_url} alt={project.name} />
           <div className={styles.buttonContainer}>
-            <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-              <button className={styles.demoButton}>Demo</button>
-            </a>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              <button className={styles.githubButton}>GitHub</button>
-            </a>
+          <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
+                <button className={styles.demoButton}>Demo</button>
+              </a>
+              <a href={formatUrl(project.github_url)} target="_blank" rel="noopener noreferrer">
+                <button className={styles.githubButton}>GitHub</button>
+              </a>
           </div>
         </div>
       ))}
