@@ -175,11 +175,11 @@ footer {
 }
 
 button {
-  padding: 0.5rem;
-  border-radius: 5px;
+  padding: 0.8rem;
+  border-radius: 4px;
   align-items: center;
   border: 1px solid rgba(var(--foreground-rgb), 0.3);
-  background: #775FA8; 
+  background: linear-gradient(to left, #45B4D6, #327CBD, #775FA8);
   margin: 10px;
   box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
   transition: background 200ms, border 200ms;

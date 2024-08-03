@@ -8,6 +8,8 @@ interface Project {
   name: string;
   description: string;
   image_url: string;
+  demoUrl: string;
+  githubUrl: string;
 }
 
 const ProjectComponent: React.FC = () => {
@@ -30,17 +32,24 @@ const ProjectComponent: React.FC = () => {
 
   return (
     <div className={styles.projectContainer}>
-      <div className={styles.projectWrapper}>
-        {projects.map((project) => (
-          <div className={styles.singleproject} key={project.id}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>   
+    <div className={styles.projectWrapper}>
+      {projects.map((project) => (
+        <div className={styles.singleproject} key={project.id}>
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+          <div className={styles.buttonContainer}>
+            <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+              <button className={styles.demoButton}>Demo</button>
+            </a>
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              <button className={styles.githubButton}>GitHub</button>
+            </a>
           </div>
-        ))}
-      </div>
-      <div></div>
+        </div>
+      ))}
     </div>
-    
+    <div></div>
+  </div>
   );
 };
 
