@@ -152,28 +152,6 @@ input {
  
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8vh;
-  margin: 20px;
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase; 
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #71C9CF, #45B4D6, #327CBD, #775FA8); 
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.icon {
-  margin-left: 10px;
-
-}
-
 button {
   padding: 0.8rem;
   border-radius: 4px;

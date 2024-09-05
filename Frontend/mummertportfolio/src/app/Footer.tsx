@@ -12,9 +12,9 @@ const Footer = ({ children }: { children: ReactNode }) => {
   
     useEffect(() => {
       const handleScroll = () => {
-        if (!showScroll && window.pageYOffset > 400) {
+        if (!showScroll && window.scrollY > 400) {
           setShowScroll(true);
-        } else if (showScroll && window.pageYOffset <= 400) {
+        } else if (showScroll && window.scrollY <= 400) {
           setShowScroll(false);
         }
       };
@@ -30,37 +30,26 @@ const Footer = ({ children }: { children: ReactNode }) => {
   
     return (
       <>
-        <footer
-          style={{
-            position: 'fixed',
-            bottom: 0,
-            width: '100%',
-            padding: '10px 0',
-          }}
-        >
-          <p style={{ fontSize: 14, textAlign: 'center', color: 'white' }}>
-            © 2024 Amy Mummert. All Rights Reserved.
-          </p>
-          <div>
+        <footer className={styles.footer}>
+        
+          <section className={styles.socialMedia}>
             <a href="https://linkedin.com/in/armummert" aria-label="LinkedIn">
               <FontAwesomeIcon className={styles.icon3} icon={faLinkedin} />
             </a>
             <a href="https://github.com/ARMummert" aria-label="GitHub">
               <FontAwesomeIcon className={styles.icon4} icon={faGithub} />
             </a>
-          </div>
-        </footer>
-        <button
+          </section>
+          <button
           onClick={scrollTop}
           style={{
             display: showScroll ? 'flex' : 'none',
             position: 'fixed',
-            bottom: '30px',
-            right: '30px',
+            bottom: '10px',
+            right: '20px',
             backgroundColor: '#000',
             color: 'white',
             border: 'none',
-            borderRadius: '50%',
             padding: '10px',
             cursor: 'pointer',
             justifyContent: 'center',
@@ -70,6 +59,11 @@ const Footer = ({ children }: { children: ReactNode }) => {
         >
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
+        <p className={styles.footerText}>
+          © 2024 Amy Mummert. All Rights Reserved.
+        </p>
+        </footer>
+
       </>
     );
   };

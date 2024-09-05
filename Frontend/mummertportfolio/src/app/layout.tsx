@@ -21,12 +21,10 @@ const Layout = ({ children }: { children: ReactNode }) => {
           name="description"
           content="Web site created using create-next-app"/>
         <title>Amy Mummert Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
         <nav style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#000', padding: '10px 0', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
           <a href="#home" style={{ margin: '0 15px', color: 'white' }}>Home</a>
-          <a href="#chess" style={{ margin: '0 15px', color: 'white' }}>Play Chess</a>
           <a href="#projects" style={{ margin: '0 15px', color: 'white' }}>Projects</a>
           <a href="#about" style={{ margin: '0 15px', color: 'white'  }}>About</a>
           <a href="#contact" style={{ margin: '0 15px', color: 'white'  }}>Contact</a>

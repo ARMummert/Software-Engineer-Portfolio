@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   text-align: left;
-  gap: 1rem;
   max-width: 100%;
   width: var(--max-width);
 }
@@ -32,10 +31,9 @@
 }
 
 .form button {
-  padding: 1rem;
-  border-radius: var(--border-radius);
+  padding: 10px;
   border: 1px solid rgba(var(--foreground-rgb), 0.3);
-  background: linear-gradient(to left, #71C9CF, #45B4D6, #327CBD, #775FA8); 
+  background: #327CBD; 
   box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
   transition: background 200ms, border 200ms;
 }
@@ -56,7 +54,6 @@
 
 .name {
     display: flex;
-    gap: 1rem;
     margin-top: 1rem;
     
 }
@@ -75,6 +72,7 @@
     justify-content: center;
     text-transform: none;
     font-size: 1.2rem;
+    margin: 10px;
 }
 
 .name {
