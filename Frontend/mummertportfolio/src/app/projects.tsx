@@ -5,7 +5,7 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 
 interface Project {
@@ -46,16 +46,16 @@ const ProjectComponent: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    // Sample projects data
+    // Project Data
     const sampleProjects: Project[] = [
       {
         id: 1,
-        name: 'Temperature Conversion',
-        description: 'A temperature conversion tool that converts Fahrenheit to Celsius and vice versa.',
+        name: 'Temperature Conversion Microservice',
+        description: 'A temperature conversion tool that converts Fahrenheit, Celsius, and Kelvin.',
         image_url: '/images/project1.png',
-        demo_url: 'https://example.com/demo1',
+        demo_url: 'https://armummert.github.io/temp_conversion/',
         github_url: 'https://github.com/ARMummert/temp_conversion',
-        built_with: 'npm NODEJS'
+        built_with: 'NODEJS'
       },
       {
         id: 2,
@@ -76,7 +76,43 @@ const ProjectComponent: React.FC = () => {
         built_with: 'npm NODEJS'
       },
       {
-        id: 3,
+        id: 4,
+        name: 'Project Three',
+        description: 'This is a description for Project Two.',
+        image_url: 'https://www.github.com',
+        demo_url: 'https://example.com/demo2',
+        github_url: 'https://github.com/user/project2',
+        built_with: 'npm NODEJS'
+      },
+      {
+        id: 5,
+        name: 'Project Three',
+        description: 'This is a description for Project Two.',
+        image_url: 'https://www.github.com',
+        demo_url: 'https://example.com/demo2',
+        github_url: 'https://github.com/user/project2',
+        built_with: 'npm NODEJS'
+      },
+      {
+        id: 6,
+        name: 'Project Three',
+        description: 'This is a description for Project Two.',
+        image_url: 'https://www.github.com',
+        demo_url: 'https://example.com/demo2',
+        github_url: 'https://github.com/user/project2',
+        built_with: 'npm NODEJS'
+      },
+      {
+        id: 7,
+        name: 'Project Three',
+        description: 'This is a description for Project Two.',
+        image_url: 'https://www.github.com',
+        demo_url: 'https://example.com/demo2',
+        github_url: 'https://github.com/user/project2',
+        built_with: 'npm NODEJS'
+      },
+      {
+        id: 8,
         name: 'Project Three',
         description: 'This is a description for Project Two.',
         image_url: 'https://www.github.com',
@@ -95,56 +131,37 @@ const ProjectComponent: React.FC = () => {
   projectContainerRef.current?.scrollBy({ left: scrollOffset, behavior: 'smooth' });
   };
 
-
   return (
     <div className={styles.projectsSection}>
-    <div className={styles.scrollButton}>
-      <button onClick={() => scroll(-300)} className={styles.scrollButton}>Back</button>
-      <button onClick={() => scroll(300)} className={styles.scrollButton}>Forward</button> 
-   
-    <div className={styles.projectContainer}>
-      <div className={styles.projectWrapper}>
-        {sampleProjects.map((project) => (
-      <div className={styles.singleproject} key={project.id}>
-        <Image src={project.image_url} className="img" alt="projectimg" width={400} height={300}/>
-      <h3 className={styles.projectname}>{project.name}</h3>
-      <p className={styles.projDesc}>{project.description}</p>
-
-      <div className={styles.buttonContainer}>
-        <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon className={styles.icon} icon={faPlay} />
-        </a>
-        <a href={formatUrl(project.github_url)} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-        </a>
+      <div className={styles.scrollButtons}>
+      <div className={`${styles.scroll} ${styles.left}`} onClick={() => scroll(-300)}>
+        <FontAwesomeIcon className={styles.scrollButton} icon={faChevronLeft} />
       </div>
-      <div><p className={styles.built}>{project.built_with}</p></div>
-    </div>
-  ))}
-  <button onClick={() => scroll(300)} className={styles.scrollButton}>Forward</button> 
-    </div>
-   </div>
-</div>
-    <div className={styles.projectWrapper}>
-      {projects.map((project) => (
-        <div className={styles.singleproject} key={project.id}>
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
-         
-          <div className={styles.buttonContainer}>
-          <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-          </a>
-          <a href={formatUrl(project.github_url)} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-          </a>
-          </div>
+      <div className={`${styles.scroll} ${styles.right}`} onClick={() => scroll(300)}>
+        <FontAwesomeIcon className={styles.scrollButton} icon={faChevronRight} />
+      </div>
+      </div>
+      <div className={styles.projectContainer} ref={projectContainerRef}>
+        <div className={styles.projectWrapper}>
+          {sampleProjects.map((project) => (
+            <div className={styles.singleproject} key={project.id}>
+              <Image src={project.image_url} className="img" alt="projectimg" width={600} height={400} />
+              <h3 className={styles.projectname}>{project.name}</h3>
+              <p className={styles.projDesc}>{project.description}</p>
+              <div className={styles.buttonContainer}>
+                <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon className={styles.icon} icon={faPlay} />
+                </a>
+                <a href={formatUrl(project.github_url)} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+                </a>
+              </div>
+              <div><p className={styles.built}>{project.built_with}</p></div>
+            </div>
+          ))}
         </div>
-
-      ))}
+      </div>
     </div>
-    <div></div>
-  </div>
   );
 };
 

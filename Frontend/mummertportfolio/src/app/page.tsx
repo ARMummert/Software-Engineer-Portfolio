@@ -28,6 +28,8 @@ export default function Home() {
       </section>
       <section id="about" className={styles.about}>
         <h2 className={styles.aboutHeader}>About</h2>
+        <p className={styles.quote}>"The only skill that will be important in the 21st century is the skill of learning new skills. Everything else will become obsolete over time."</p>
+        <p className={styles.author}>- Peter Drucker</p>
         <Image className={styles.profilepic} src="/images/profilepic.jpg" alt="Profile Picture" width={400} height={200} priority/>
         <p className={styles.aboutText}>
           I am a software engineer with a passion for creating and problem solving. I have experience with a variety of technologies, including JavaScript, React, Node.js, and Python. I am always eager to learn new things and take on new challenges. I am currently seeking new opportunities to grow and develop my skills as a software engineer. 

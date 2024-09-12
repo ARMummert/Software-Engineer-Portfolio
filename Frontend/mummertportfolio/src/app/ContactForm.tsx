@@ -96,7 +96,7 @@ interface FormProps {
 const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
     <form className={styles.form} onSubmit={handleSubmit}>
         <div>
-        <FontAwesomeIcon icon={faEnvelope} style={{ color: '#327CBD', height: 100, width: 100, marginRight: '10px'}} />
+        <FontAwesomeIcon icon={faEnvelope} style={{ color: '#45B4D6', height: 100, width: 100, marginRight: '10px'}} />
         </div>
         <p className={styles.contact}>Feel free to contact me with any questions or comments!</p>
         <label className={styles.name}>
@@ -113,7 +113,7 @@ const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
         <br />
         {errors && errors.message && <div className={styles.error}>{errors.message}</div>}
         <div>
-        <button type="submit">
+        <button style={{ backgroundColor: '#45B4D6', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase'}} type="submit">
             Submit
         </button>
         </div>
