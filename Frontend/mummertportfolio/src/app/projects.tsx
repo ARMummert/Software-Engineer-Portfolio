@@ -59,18 +59,18 @@ const ProjectComponent: React.FC = () => {
       },
       {
         id: 2,
-        name: 'Project Two',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
+        name: 'Web Developer Portfolio',
+        description: 'A portfolio website showcasing a developers projects. Includes a contact form & experience page.',
+        image_url: '/images/developerportfoliohomepage.png',
+        demo_url: 'https://www.mummertar.xyz',
         github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
+        built_with: 'REACT DJANGO'
       },
       {
         id: 3,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
+        name: 'Baton Twirling Entry Form Database',
+        description: 'A MySQL relational database for storing baton twirling competition entry forms.',
+        image_url: '/images/homepage.ae85d5ed33164dae7cf9.png',
         demo_url: 'https://example.com/demo2',
         github_url: 'https://github.com/user/project2',
         built_with: 'npm NODEJS'
@@ -145,8 +145,10 @@ const ProjectComponent: React.FC = () => {
         <div className={styles.projectWrapper}>
           {sampleProjects.map((project) => (
             <div className={styles.singleproject} key={project.id}>
-              <Image src={project.image_url} className="img" alt="projectimg" width={600} height={400} />
               <h3 className={styles.projectname}>{project.name}</h3>
+              <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
+                <Image src={project.image_url} className={styles.img} alt="projectimg" width={600} height={400} />
+              </a>
               <p className={styles.projDesc}>{project.description}</p>
               <div className={styles.buttonContainer}>
                 <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">

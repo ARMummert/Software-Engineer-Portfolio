@@ -14,13 +14,54 @@ export default function Home() {
   return (
     <main id="home" className={styles.main}>
       <section className={styles.top}>
-      <div>
-      <div className={styles.headerText}>
-        <h1>Amy Mummert</h1>
-        <h1 className={styles.headertText2}>Software Engineer</h1>
-      </div>
-      <p className={styles.text}>Fueled by Coffee, Driven by Code, and Bridging the Gap Between Ideas and Reality.</p>
-      </div>
+        <div className={styles.headerText}>
+          <div className={styles.line}>
+            <span>A</span>
+            <span>M</span>
+            <span className={styles.wordSpace}>Y</span>
+            <span>M</span>
+            <span>U</span>
+            <span>M</span>
+            <span>M</span>
+            <span>E</span>
+            <span>R</span>
+            <span className={styles.wordSpace}>T</span>
+          </div>
+          <div className={styles.line}>
+            <span>S</span>
+            <span>O</span>
+            <span>F</span>
+            <span>T</span>
+            <span>W</span>
+            <span>A</span>
+            <span>R</span>
+            <span className={styles.wordSpace}>E</span>
+            <span>E</span>
+            <span>N</span>
+            <span>G</span>
+            <span>I</span>
+            <span>N</span>
+            <span>E</span>
+            <span>E</span>
+            <span>R</span>
+          </div>
+        </div>
+        <div className={styles.text}>
+          <span>F</span><span>u</span><span>e</span><span>l</span><span>e</span><span className={styles.wordSpace}>d</span>
+          <span>b</span><span className={styles.wordSpace}>y</span>
+          <span>C</span><span>o</span><span>f</span><span>f</span><span>e</span><span>e</span><span className={styles.wordSpace}>,</span>
+          <span>D</span><span>r</span><span>i</span><span>v</span><span>e</span><span className={styles.wordSpace}>n</span>
+          <span>b</span><span className={styles.wordSpace}>y</span>
+          <span>C</span><span>o</span><span>d</span><span>e</span><span className={styles.wordSpace}>,</span>
+          <span>a</span><span>n</span><span className={styles.wordSpace}>d</span>
+          <span>B</span><span>r</span><span>i</span><span>d</span><span>g</span><span>i</span><span>n</span><span className={styles.wordSpace}>g</span>
+          <span>t</span><span>h</span><span className={styles.wordSpace}>e</span>
+          <span>G</span><span>a</span><span className={styles.wordSpace}>p</span>  
+          <span>B</span><span>e</span><span>t</span><span>w</span><span>e</span><span>e</span><span className={styles.wordSpace}>n</span>
+          <span>I</span><span>d</span><span>a</span><span className={styles.wordSpace}>s</span>
+          <span>a</span><span>n</span><span className={styles.wordSpace}>d</span>
+          <span>R</span><span>e</span><span>a</span><span>l</span><span>i</span><span>t</span><span>y</span><span className={styles.wordSpace}>.</span>
+        </div>
       </section>
       <section id="projects" className={styles.projects}>
         <h2 className={styles.projectheader}>Projects</h2>
@@ -66,4 +107,3 @@ export default function Home() {
     </main>
   );
 }
-
