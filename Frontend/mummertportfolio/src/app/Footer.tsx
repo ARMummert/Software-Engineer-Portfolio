@@ -32,14 +32,7 @@ const Footer = ({ children }: { children: ReactNode }) => {
       <>
         <footer className={styles.footer}>
         
-          <section className={styles.socialMedia}>
-            <a href="https://linkedin.com/in/armummert" aria-label="LinkedIn">
-              <FontAwesomeIcon className={styles.icon3} icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/ARMummert" aria-label="GitHub">
-              <FontAwesomeIcon className={styles.icon4} icon={faGithub} />
-            </a>
-          </section>
+          
           <button
           onClick={scrollTop}
           style={{
