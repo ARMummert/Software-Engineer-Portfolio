@@ -69,7 +69,7 @@ export default function Home() {
       </section>
       <section id="about" className={styles.about}>
         <h2 className={styles.aboutHeader}>About</h2>
-        <p className={styles.quote}>"The only skill that will be important in the 21st century is the skill of learning new skills. Everything else will become obsolete over time."</p>
+        <p className={styles.quote}>&quot;The only skill that will be important in the 21st century is the skill of learning new skills. Everything else will become obsolete over time.&quot;</p>
         <p className={styles.author}>- Peter Drucker</p>
         <Image className={styles.profilepic} src="/images/profilepic.jpg" alt="Profile Picture" width={400} height={200} priority/>
         <p className={styles.aboutText}>
