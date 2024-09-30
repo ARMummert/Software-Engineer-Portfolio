@@ -23,13 +23,13 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <title>Amy Mummert Portfolio</title>
       </head>
       <body>
-        <nav style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#000', padding: '10px 0', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
-          <a href="#home" style={{ margin: '0 15px', color: 'white' }}>Home</a>
-          <a href="#projects" style={{ margin: '0 15px', color: 'white' }}>Projects</a>
-          <a href="#about" style={{ margin: '0 15px', color: 'white'  }}>About</a>
-          <a href="#contact" style={{ margin: '0 15px', color: 'white'  }}>Contact</a>
+        <nav style={{ position: 'fixed', width: '100%', justifyContent: 'center', backgroundColor: '#000', padding: '5px 5px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
+          <a href="#home" style={{ margin: '0 10px', color: 'white' }}>Home</a>
+          <a href="#projects" style={{ margin: '0 10px', color: 'white' }}>Projects</a>
+          <a href="#about" style={{ margin: '0 10px', color: 'white'  }}>About</a>
+          <a href="#contact" style={{ margin: '0 10px', color: 'white'  }}>Contact</a>
         </nav>   
-        <main style={{ marginTop: '20px' }}>
+        <main>
           {children}
         </main>
         <Footer>{children}</Footer>

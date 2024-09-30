@@ -7,8 +7,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
     padding: 6rem;
     min-height: 100vh;
+    max-width: 100%; /* Constrain width to fit within the viewport */
+    width: 100vw; /* Viewport width */
   }
   
   .description {
@@ -131,15 +134,16 @@
   }
   
   /* Mobile */
-  @media (max-width: 700px) {
-    .content {
+  @media (max-width: 768px) {
+    .main {
       padding: 4rem;
+      background-color: black;
     }
   
     .grid {
       grid-template-columns: 1fr;
       margin-bottom: 120px;
-      max-width: 320px;
+      max-width: 100vw;
       text-align: center;
     }
   
@@ -214,7 +218,15 @@
       filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
     }
   }
-  
+  @media only screen and (max-width: 768px) {
+    /* Styles for tablets and mobile screens */
+    .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
   @keyframes rotate {
     from {
       transform: rotate(360deg);
@@ -237,7 +249,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 30%; /* Center vertically */
+    top: 45%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     font-size: 2rem;
@@ -250,9 +262,6 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     transform-origin: center; 
-    overflow: hidden;
-    white-space: nowrap;
-
   }
   
   .text {
@@ -263,9 +272,9 @@
     font-size: 2.0rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 400px;
     color: white;
-   
+    
   }
   
 
@@ -385,7 +394,6 @@
   }
   
   .projects {
-   
     width: 100vw;
     padding: 6rem;
     min-height: 100vh;
@@ -482,7 +490,7 @@
   }
 
   .top {
-    padding-bottom: 300px;
+    padding-bottom: 350px;
   }
   
   .social {
@@ -519,7 +527,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 20px;
     padding: 10px;
     border-radius: 10px;
     width: 500px;

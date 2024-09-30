@@ -38,9 +38,9 @@ const Footer = ({ children }: { children: ReactNode }) => {
           style={{
             display: showScroll ? 'flex' : 'none',
             position: 'fixed',
-            bottom: '10px',
-            right: '20px',
-            backgroundColor: '#000',
+            bottom: '5px',
+            right: '5px',
+            backgroundColor: 'transparent',
             color: 'white',
             border: 'none',
             padding: '10px',
