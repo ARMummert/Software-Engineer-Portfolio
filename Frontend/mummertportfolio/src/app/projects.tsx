@@ -27,23 +27,8 @@ const formatUrl = (url: string) => {
 
 
 const ProjectComponent: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
   const [sampleProjects, setSampleProjects] = useState<Project[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch('http://localhost:3001/api/projects');
-        const data: Project[] = await response.json();
-        setProjects(data);
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-      }
-    };
-
-    fetchProjects();
-  }, []);
 
   useEffect(() => {
     // Project Data

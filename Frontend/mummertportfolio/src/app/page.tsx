@@ -5,10 +5,6 @@ import ContactForm from "./ContactForm";
 import styles from "./page.module.css";
 import Image from "next/image";
 import ProjectComponent from "./projects";
-import ChessBoard from "./ChessBoard";
-import RPS from "./RockPaperScissors";
-import Footer from "./Footer";
-
 
 export default function Home() {
   return (

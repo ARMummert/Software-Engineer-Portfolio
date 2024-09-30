@@ -133,6 +133,7 @@ nav {
   height: 8vh;
   padding: 1rem 2rem;
   background-color: black;
+  font-weight: 500;
   font-size: 16px;
   text-transform: uppercase; 
   font-family: 'Montserrat', sans-serif;

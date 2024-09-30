@@ -10,8 +10,8 @@
     background-color: black;
     padding: 6rem;
     min-height: 100vh;
-    max-width: 100%; /* Constrain width to fit within the viewport */
-    width: 100vw; /* Viewport width */
+    max-width: 100%; 
+    width: 100vw; 
   }
   
   .description {
@@ -115,6 +115,7 @@
   .logo {
     position: relative;
   }
+
   /* Enable hover only on non-touch devices */
   @media (hover: hover) and (pointer: fine) {
     .card:hover {
@@ -249,8 +250,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 45%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: 45%;
+    left: 50%; 
     transform: translate(-50%, -50%);
     font-size: 2rem;
     text-align: center;
@@ -269,12 +270,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 2.0rem;
+    width: 100vw;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 400px;
     color: white;
-    
   }
   
 
@@ -392,6 +393,17 @@
   .line span {
     display: inline-block;
   }
+
+  .projectsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    background-color: white;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
   
   .projects {
     width: 100vw;
@@ -435,7 +447,7 @@
   }
   
   .aboutHeader {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-transform: uppercase;
     margin-top:100px;
     padding: 20px;
@@ -459,7 +471,7 @@
     font-size: 1.3rem;
     text-align: center;
     color: white;
-    width: 50%;
+    width: 100%;
   }
 
   .contact {
@@ -481,7 +493,7 @@
   .contactHeader {
     display: flex;
     flex-direction: row;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
@@ -501,11 +513,16 @@
   
   .projectContainer {
     display: flex;
+    background-color: transparent;
+    width: 100vw;
     white-space: nowrap; 
     overflow-x: scroll; /* Allow horizontal scrolling */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
-  }
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+  }  
 
   .projectContainer::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
@@ -545,11 +562,11 @@
     margin-top: 20px;
     width: 400px;
     height: 280px;
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom */
+    transition: transform 0.3s ease-in-out; 
   }
   
   .singleproject img:hover {
-    transform: scale(1.2); /* Zoom in on hover */
+    transform: scale(1.2); 
   }
 
   .img {
@@ -702,8 +719,8 @@
 
   .techList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px; 
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px; 
     font-size: 1.0rem;
     margin-top: 20px;
     margin-left: 35px;
@@ -712,10 +729,13 @@
 
   .quote {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.3rem;
     margin-top: 50px;
+    width: 100%;
     color: white;
     font-style: italic;
   }

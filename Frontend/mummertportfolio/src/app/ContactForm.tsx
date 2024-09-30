@@ -34,7 +34,6 @@ const ContactForm = () => {
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Validation function to check if all fields are filled
     const isFormValid = () => {
     return Object.values(formData).every(field => field.trim() !== '');
     };
@@ -98,7 +97,7 @@ const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
         <div>
         <FontAwesomeIcon icon={faEnvelope} style={{ color: '#45B4D6', height: 100, width: 100, marginRight: '10px'}} />
         </div>
-        <p className={styles.contact}>Feel free to contact me with any questions or comments!</p>
+        <p className={styles.contact}>Send me a message!</p>
         <label className={styles.name}>
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
         </label>

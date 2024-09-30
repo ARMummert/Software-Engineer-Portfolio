@@ -2,7 +2,6 @@
 import "./globals.css";
 import "./page.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import styles from './page.module.css';
@@ -31,8 +30,6 @@ const Footer = ({ children }: { children: ReactNode }) => {
     return (
       <>
         <footer className={styles.footer}>
-        
-          
           <button
           onClick={scrollTop}
           style={{
@@ -56,7 +53,6 @@ const Footer = ({ children }: { children: ReactNode }) => {
           © 2024 Amy Mummert. All Rights Reserved.
         </p>
         </footer>
-
       </>
     );
   };
