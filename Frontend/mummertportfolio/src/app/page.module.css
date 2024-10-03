@@ -417,6 +417,11 @@
   }
 
   .projectname {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     font-size: 0.9rem;
   }
@@ -549,8 +554,8 @@
     display: flex;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
     margin-top: 20px;
-    width: 300px;
-    height: 180px;
+    width: 350px;
+    height: 200px;
     transition: transform 0.3s ease-in-out; 
   }
   

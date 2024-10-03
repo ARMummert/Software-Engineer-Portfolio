@@ -58,53 +58,18 @@ const ProjectComponent: React.FC = () => {
         image_url: '/images/Dedicated-Server.png',
         demo_url: 'https://armummert.github.io/Dedicated-Server-Project/',
         github_url: 'https://github.com/ARMummert/Dedicated-Server-Project',
-        built_with: 'Shell Script'
+        built_with: 'SHELL SCRIPT'
       },
       {
         id: 4,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
+        name: 'Baton Twirling Entry Form Database',
+        description: 'The Baton Twirling Database stores entries for athletes attending baton twirling events.',
+        image_url: '/images/databasehomepage.png',
+        demo_url: 'https://armummert.github.io/Apple-Jacks-Database-Project/',
+        github_url: 'https://github.com/ARMummert/Apple-Jacks-Database-Project',
+        built_with: 'NODEJS EXPRESSJS MYSQL RELATIONAL DATABASE'
       },
-      {
-        id: 5,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
-      },
-      {
-        id: 6,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
-      },
-      {
-        id: 7,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
-      },
-      {
-        id: 8,
-        name: 'Project Three',
-        description: 'This is a description for Project Two.',
-        image_url: 'https://www.github.com',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
-      },
+     
     ];
   
     setSampleProjects(sampleProjects);
