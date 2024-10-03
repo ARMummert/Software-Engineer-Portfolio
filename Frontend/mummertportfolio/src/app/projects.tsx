@@ -55,10 +55,10 @@ const ProjectComponent: React.FC = () => {
         id: 3,
         name: 'Dedicated Server Project',
         description: 'A dedicated server project that includes a website and PostgreSQL Database.',
-        image_url: '/images/homepage.ae85d5ed33164dae7cf9.png',
-        demo_url: 'https://example.com/demo2',
-        github_url: 'https://github.com/user/project2',
-        built_with: 'npm NODEJS'
+        image_url: '/images/Dedicated-Server.png',
+        demo_url: 'https://armummert.github.io/Dedicated-Server-Project/',
+        github_url: 'https://github.com/ARMummert/Dedicated-Server-Project',
+        built_with: 'Shell Script'
       },
       {
         id: 4,
