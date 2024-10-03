@@ -48,7 +48,7 @@ const ProjectComponent: React.FC = () => {
         description: 'A portfolio website showcasing a developers projects. Includes a contact form & experience page.',
         image_url: '/images/developerportfoliohomepage.png',
         demo_url: 'https://www.mummertar.xyz',
-        github_url: 'https://github.com/user/project2',
+        github_url: 'https://github.com/ARMummert/',
         built_with: 'REACT DJANGO'
       },
       {
@@ -127,7 +127,6 @@ const ProjectComponent: React.FC = () => {
       </div>
       </div>
       <div className={styles.projectContainer} ref={projectContainerRef}>
-        <div className={styles.projectWrapper}>
           {sampleProjects.map((project) => (
             <div className={styles.singleproject} key={project.id}>
               <h3 className={styles.projectname}>{project.name}</h3>
@@ -146,7 +145,6 @@ const ProjectComponent: React.FC = () => {
               <div><p className={styles.built}>{project.built_with}</p></div>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );

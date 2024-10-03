@@ -394,34 +394,25 @@
     display: inline-block;
   }
 
-  .projectsSection {
-    display: flex;
-    flex-direction: column;
+  .projectsSection { 
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
     background-color: white;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  .projects {
-    width: 100vw;
-    padding: 6rem;
-    min-height: 100vh;
-    background-color: white;
-    color: black;
   }
 
   .projectheader{
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
     font-size: 2.0rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
     font-weight: 600;  
+    color: black;
     margin-bottom: -80px;
   }
 
@@ -503,7 +494,7 @@
   }
 
   .top {
-    padding-bottom: 350px;
+    padding-bottom: 200px;
   }
   
   .social {
@@ -514,10 +505,13 @@
   
   .projectContainer {
     display: flex;
-    background-color: transparent;
+    flex-direction: row;
+    background-color: white;
+    
     width: 100vw;
     white-space: nowrap; 
     overflow-x: scroll; /* Allow horizontal scrolling */
+    
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     padding: 0; 
@@ -526,13 +520,6 @@
 
   .projectContainer::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
-  }
-
-  .projectWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
   }
   
   .icon:hover {
@@ -544,8 +531,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    padding: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 25px;
     border-radius: 10px;
     width: 400px;
     height: 400px;
@@ -680,6 +669,7 @@
   .scrollButton {
     display: flex;
     gap: 10px;
+    margin-top: 80px;
     margin-bottom: 10px;
     background-color: #45B4D6;
     border-radius: 10%;
