@@ -53,8 +53,8 @@ const ProjectComponent: React.FC = () => {
       },
       {
         id: 3,
-        name: 'Baton Twirling Entry Form Database',
-        description: 'A MySQL relational database for storing baton twirling competition entry forms.',
+        name: 'Dedicated Server Project',
+        description: 'A dedicated server project that includes a website and PostgreSQL Database.',
         image_url: '/images/homepage.ae85d5ed33164dae7cf9.png',
         demo_url: 'https://example.com/demo2',
         github_url: 'https://github.com/user/project2',
