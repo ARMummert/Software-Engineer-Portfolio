@@ -32,7 +32,7 @@ export default function Home() {
         <p className={styles.aboutText}>
           I am a software engineer with a passion for creating and problem solving. I have experience with a variety of technologies, including JavaScript, React, Node.js, and Python. I am always eager to learn new things and take on new challenges. I am currently seeking new opportunities to grow and develop my skills as a software engineer. 
         </p>
-        <a href="resume/amyResumeCurrent.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
+        <a href="resume/mummert.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
         <p className={styles.aboutText}>Here are some technologies that I have experience with:</p>
         <ul className={styles.techList}>
           <li>React</li>

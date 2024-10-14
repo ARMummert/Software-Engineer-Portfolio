@@ -67,9 +67,26 @@ const ProjectComponent: React.FC = () => {
         image_url: '/images/databasehomepage.png',
         demo_url: 'https://armummert.github.io/Apple-Jacks-Database-Project/',
         github_url: 'https://github.com/ARMummert/Apple-Jacks-Database-Project',
-        built_with: 'NODEJS EXPRESSJS MYSQL RELATIONAL DATABASE'
+        built_with: 'NODEJS EXPRESSJS MYSQL DATABASE'
       },
-     
+      {
+        id: 5,
+        name: 'Dog Training App & Newsletter Microservice',
+        description: 'A user friendly dog training application and newsletter microservice.',
+        image_url: '/images/dogwebappportfolio2.png',
+        demo_url: 'https://github.com/ARMummert/Dog-Training-Application-and-Newsletter-Microservce',
+        github_url: 'https://github.com/ARMummert/Dog-Training-Application-and-Newsletter-Microservce',
+        built_with: 'PYTHON DJANGO DOCKER POSTGRESQL RABBITMQ'
+      },
+      {
+        id: 6,
+        name: 'UX/UI Design - Note Taking App',
+        description: 'A note taking app that includes a user friendly interface and design.',
+        image_url: '/images/notetakingapp.png',
+        demo_url: 'https://www.figma.com/proto/3R4YpXXdWzElBmLGLD6JXz/Notes_Station_Clickable_Prototype?page-id=1%3A2&node-id=89-1299&viewport=375%2C540%2C0.1&t=N57b1G0XzUXjgisW-1&scaling=scale-down&content-scaling=fixe',
+        github_url: 'https://github.com/ARMummert/',
+        built_with: 'FIGMA'
+      },
     ];
   
     setSampleProjects(sampleProjects);
