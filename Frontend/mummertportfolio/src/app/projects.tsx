@@ -47,7 +47,7 @@ const ProjectComponent: React.FC = () => {
         name: 'Web Developer Portfolio',
         description: 'A portfolio website showcasing a developers projects. Includes a contact form & experience page.',
         image_url: '/images/developerportfoliohomepage.png',
-        demo_url: 'https://www.mummertar.xyz',
+        demo_url: 'https://armummert.github.io/Web-Developer-Portfolio/',
         github_url: 'https://github.com/ARMummert/',
         built_with: 'REACT DJANGO'
       },
