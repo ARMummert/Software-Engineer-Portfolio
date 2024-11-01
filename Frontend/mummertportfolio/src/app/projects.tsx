@@ -28,7 +28,6 @@ const formatUrl = (url: string) => {
 
 const ProjectComponent: React.FC = () => {
   const [sampleProjects, setSampleProjects] = useState<Project[]>([]);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Project Data
@@ -87,6 +86,15 @@ const ProjectComponent: React.FC = () => {
         github_url: 'https://github.com/ARMummert/',
         built_with: 'FIGMA'
       },
+      {
+        id: 7,
+        name: 'In Progress - Blog Website',
+        description: 'A Blog website that allows users to create, edit, and delete blog posts.',
+        image_url: '/images/bloghome.png',  
+        demo_url: '',
+        github_url: '',
+        built_with: 'REACT NEXTJS TYPESCRIPT SANITY'
+      },
     ];
   
     setSampleProjects(sampleProjects);
@@ -100,14 +108,6 @@ const ProjectComponent: React.FC = () => {
 
   return (
     <div className={styles.projectsSection}>
-      <div className={styles.scrollButtons}>
-      <div className={`${styles.scroll} ${styles.left}`} onClick={() => scroll(-300)}>
-        <FontAwesomeIcon className={styles.scrollButton} icon={faChevronLeft} />
-      </div>
-      <div className={`${styles.scroll} ${styles.right}`} onClick={() => scroll(300)}>
-        <FontAwesomeIcon className={styles.scrollButton} icon={faChevronRight} />
-      </div>
-      </div>
       <div className={styles.projectContainer} ref={projectContainerRef}>
           {sampleProjects.map((project) => (
             <div className={styles.singleproject} key={project.id}>

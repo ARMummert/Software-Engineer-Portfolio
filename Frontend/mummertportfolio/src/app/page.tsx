@@ -20,10 +20,15 @@ export default function Home() {
         </p>
       </div>
       </section>
+      <div className={styles.projectsSection}>
       <section id="projects" className={styles.projects}>
+        <div className={styles.projectheader}>
         <h2 className={styles.projectheader}>Projects</h2>
+        </div>
         <div><ProjectComponent /></div>
       </section>
+      </div>
+      <div className={styles.aboutSection}>
       <section id="about" className={styles.about}>
         <h2 className={styles.aboutHeader}>About</h2>
         <p className={styles.quote}>&quot;The only skill that will be important in the 21st century is the skill of learning new skills. Everything else will become obsolete over time.&quot;</p>
@@ -57,6 +62,7 @@ export default function Home() {
           <li>Git / GitHub</li>
         </ul>
       </section>
+      </div>
       <section id="contact" className={styles.contact}>
         <h2 className={styles.contactHeader}>Contact</h2>
         <ContactForm />

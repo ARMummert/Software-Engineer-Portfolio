@@ -8,9 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 6rem;
-    min-height: 100vh;
-    max-width: 100%; 
+    height: auto;
     width: 100vw; 
   }
   
@@ -398,14 +396,13 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
   }
-
+  
   .projectheader{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 2.0rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -413,7 +410,7 @@
     align-items: center;
     font-weight: 600;  
     color: black;
-    margin-bottom: -80px;
+    
   }
 
   .projectname {
@@ -439,10 +436,11 @@
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
-    background-color: black;
     color: white;
   }
-  
+  .aboutSection {
+    height: auto;
+  }
   .aboutHeader {
     font-size: 2.0rem;
     text-transform: uppercase;
@@ -498,10 +496,6 @@
     font-weight: 600;
   }
 
-  .top {
-    padding-bottom: 200px;
-  }
-  
   .social {
     display: flex;
     justify-content: center;
@@ -509,14 +503,14 @@
   }
   
   .projectContainer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    flex-direction: column;
+    margin-top: 50px;
     background-color: white;
-    
     width: 100vw;
     white-space: nowrap; 
     overflow-x: scroll; /* Allow horizontal scrolling */
-    
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     padding: 0; 
@@ -532,7 +526,6 @@
   }
 
   .singleproject {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -541,7 +534,7 @@
     margin-left: 40px;
     margin-bottom: 40px;
     border-radius: 10px;
-    width: 400px;
+    width: 320px;
     height: 420px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -762,4 +755,16 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
   }
