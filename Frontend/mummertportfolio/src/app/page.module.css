@@ -226,57 +226,6 @@
 
   }
 
-  @keyframes rotate {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-  
-  .title { 
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Arvo', serif;
-  }
-  
-  .headerText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 45%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to left, #71C9CF, #45B4D6, #327CBD, #775FA8); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    transform-origin: center; 
-  }
-  
-  .text {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-top: 400px;
-    color: white;
-  }
-  
-
   /********** ANIMATIONS ***********/
   @keyframes growText {
     from {
@@ -382,6 +331,57 @@
     }
   }
 
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+ 
+   /* Styles */
+   .title { 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arvo', serif;
+  }
+  
+  .headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #71C9CF, #45B4D6, #327CBD, #775FA8); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    transform-origin: center; 
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 400px;
+    color: white;
+  }
+
   .line {
     display: flex;
     margin-bottom: 10px;
@@ -459,14 +459,14 @@
   .aboutText {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap:wrap-reverse;
     align-items: center;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 80%;
   }
 
   .contact {
@@ -534,7 +534,7 @@
     margin-left: 40px;
     margin-bottom: 40px;
     border-radius: 10px;
-    width: 320px;
+    width: 330px;
     height: 420px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -693,9 +693,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 50px;
     color: #775FA8;
+    text-transform: uppercase;
   }
 
   .resumeLink:hover {
@@ -713,6 +714,18 @@
     text-transform: uppercase;
   }
 
+  .techStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
   .quote {
     display: flex;
     flex-direction: column;
@@ -721,7 +734,7 @@
     text-align: center;
     font-size: 1.3rem;
     margin-top: 50px;
-    width: 100%;
+    width: 90%;
     color: white;
     font-style: italic;
   }
