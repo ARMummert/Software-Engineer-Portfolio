@@ -48,7 +48,7 @@ const ProjectComponent: React.FC = () => {
         image_url: '/images/developerportfoliohomepage.png',
         demo_url: 'https://armummert.github.io/Web-Developer-Portfolio/',
         github_url: 'https://github.com/ARMummert/',
-        built_with: 'REACT DJANGO'
+        built_with: 'REACT DJANGO JAVASCRIPT'
       },
       {
         id: 3,
@@ -91,8 +91,8 @@ const ProjectComponent: React.FC = () => {
         name: 'In Progress - Blog Website',
         description: 'A Blog website that allows users to create, edit, and delete blog posts.',
         image_url: '/images/bloghome.png',  
-        demo_url: '',
-        github_url: '',
+        demo_url: 'https://github.com/ARMummert/',
+        github_url: 'https://github.com/ARMummert/',
         built_with: 'REACT NEXTJS TYPESCRIPT SANITY'
       },
     ];

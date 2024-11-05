@@ -52,6 +52,7 @@ const Footer = ({ children }: { children: ReactNode }) => {
         <p className={styles.footerText}>
           © 2024 Amy Mummert. All Rights Reserved.
         </p>
+        <p className={styles.footerText}>BUILT WITH - REACT NEXTJS TYPESCRIPT FASTAPI</p>
         </footer>
       </>
     );

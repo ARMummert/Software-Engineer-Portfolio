@@ -5,6 +5,29 @@ import ContactForm from "./ContactForm";
 import styles from "./page.module.css";
 import Image from "next/image";
 import ProjectComponent from "./projects";
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from "react-icons/fa";
+import { SiReact, SiExpress, SiNextdotjs, SiDjango, SiJavascript, SiExpo, SiTypescript, SiMysql, SiPostgresql, SiMariadb, SiHeroku, SiRabbitmq } from "react-icons/si";
+
+const techIcons = [
+  { icon: <FaReact /> },
+  { icon: <SiExpress />},
+  { icon: <SiNextdotjs />},
+  { icon: <SiDjango /> },
+  { icon: <FaNodeJs />},
+  { icon: <FaPython />},
+  { icon: <SiJavascript /> },
+  { icon: <SiExpo />},
+  { icon: <SiTypescript />},
+  { icon: <FaHtml5 /> },
+  { icon: <FaCss3Alt /> },
+  { icon: <SiMysql />},
+  { icon: <SiPostgresql /> },
+  { icon: <SiMariadb /> },
+  { icon: <FaDocker />},
+  { icon: <SiHeroku /> },
+  { icon: <SiRabbitmq /> },
+  { icon: <FaGitAlt /> },
+];
 
 export default function Home() {
   return (
@@ -39,28 +62,15 @@ export default function Home() {
         </p>
         <a href="resume/mummert.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
         <p className={styles.techStack}>Tech Stack</p>
-        <ul className={styles.techList}>
-          <li>React</li>
-          <li>React-Native</li>
-          <li>Express</li>
-          <li>NextJS</li>
-          <li>Django</li>
-          <li>NodeJS</li>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>Expo</li>
-          <li>Typescript</li>
-          <li>C / C#</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-          <li>MariaDB</li>
-          <li>Docker</li>
-          <li>Heroku</li>
-          <li>RabbitMQ</li>
-          <li>Git / GitHub</li>
-        </ul>
+        <div>
+      <ul className={styles.techList}>
+        {techIcons.map((tech, index) => (
+          <li key={index} className={styles.techItem}>
+            {tech.icon}
+          </li>
+        ))}
+      </ul>
+    </div>
       </section>
       </div>
       <section id="contact" className={styles.contact}>
