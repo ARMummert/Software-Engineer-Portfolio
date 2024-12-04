@@ -55,7 +55,7 @@ const ProjectComponent: React.FC = () => {
         name: 'Dedicated Server Project',
         description: 'A dedicated server project that includes a website and PostgreSQL Database.',
         image_url: '/images/dedicatedserver.png',
-        demo_url: 'https://armummert.github.io/Virtual-Private-Server-Project/',
+        demo_url: 'https://armummert.github.io/Dedicated-Server-Project/',
         github_url: 'https://github.com/ARMummert/',
         built_with: 'SHELL SCRIPT'
       },

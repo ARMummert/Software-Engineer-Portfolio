@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import ProjectComponent from "./projects";
 import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from "react-icons/fa";
-import { SiReact, SiExpress, SiNextdotjs, SiDjango, SiJavascript, SiExpo, SiTypescript, SiMysql, SiPostgresql, SiMariadb, SiHeroku, SiRabbitmq } from "react-icons/si";
+import { SiExpress, SiNextdotjs, SiDjango, SiJavascript, SiExpo, SiTypescript, SiMysql, SiPostgresql, SiMariadb, SiHeroku, SiRabbitmq } from "react-icons/si";
 
 const techIcons = [
   { icon: <FaReact /> },
@@ -33,11 +33,13 @@ export default function Home() {
   return (
     <main id="home" className={styles.main}>
       <section className={styles.top}>
+      <div className={styles.headerTextWrapper}>
       <div className={styles.headerText}>
           <p className={styles.line}>AMY MUMMERT</p>
           <p className={styles.line}>SOFTWARE ENGINEER</p>
       </div>
-      <div>
+      </div>
+      <div className={styles.motto}>
         <p className={styles.text}>
         Fueled by Coffee, Driven by Code, and Bridging the Gap Between Ideas and Reality.
         </p>
@@ -60,23 +62,59 @@ export default function Home() {
         <p className={styles.aboutText}>
           I am a software engineer with a passion for creating and problem solving. I have experience with a variety of technologies, including JavaScript, React, Node.js, and Python. I am always eager to learn new things and take on new challenges. I am currently seeking new opportunities to grow and develop my skills as a software engineer. 
         </p>
-        <a href="resume/mummert.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
-        <p className={styles.techStack}>Tech Stack</p>
+         <p className={styles.techStack}>Skills</p>
         <div>
-      <ul className={styles.techList}>
-        {techIcons.map((tech, index) => (
-          <li key={index} className={styles.techItem}>
-            {tech.icon}
-          </li>
-        ))}
-      </ul>
-    </div>
-      </section>
+   
+      <div className={styles.tagList}>
+      <div className={styles.loopSlider}  style={{ "--duration": "15951ms", "--direction": "normal" } as React.CSSProperties}>
+        <div className={styles.inner}>
+        <div className={styles.tag}><span>#</span> JavaScript</div>
+        <div className={styles.tag}><span>#</span> React</div>
+        <div className={styles.tag}><span>#</span> React Native</div>
+        <div className={styles.tag}><span>#</span> Django</div>
+        <div className={styles.tag}><span>#</span> Python</div>
+        <div className={styles.tag}><span>#</span> Typescript</div>
+        <div className={styles.tag}><span>#</span> Next.js</div>
+        <div className={styles.tag}><span>#</span> NodeJs</div>
+        <div className={styles.tag}><span>#</span> ExpressJS</div>
       </div>
-      <section id="contact" className={styles.contact}>
-        <h2 className={styles.contactHeader}>Contact</h2>
-        <ContactForm />
-      </section>
+      </div>
+      <div className={styles.loopSlider} style={{ "--duration": "19260ms", "--direction": "reverse" } as React.CSSProperties}>
+        <div className={styles.inner}>
+        <div className={styles.tag}><span>#</span> Restful APIs</div>
+        <div className={styles.tag}><span>#</span> FastAPI</div>
+        <div className={styles.tag}><span>#</span> HTML</div>
+        <div className={styles.tag}><span>#</span> CSS</div>
+        <div className={styles.tag}><span>#</span> MySQL</div>
+        <div className={styles.tag}><span>#</span> PostgreSQL</div>
+        <div className={styles.tag}><span>#</span> MariaDB</div>
+        <div className={styles.tag}><span>#</span> Docker</div>
+        <div className={styles.tag}><span>#</span> RabbitMQ</div>
+        <div className={styles.tag}><span>#</span> Heroku</div>
+        </div>
+      </div>
+      <div className={styles.loopSlider} style={{ "--duration": "10449ms", "--direction": "normal" } as React.CSSProperties}>
+        <div className={styles.inner}>
+        <div className={styles.tag}><span>#</span> Agile & Waterfall Methodologies</div>
+        <div className={styles.tag}><span>#</span> Test Driven Development</div>
+        <div className={styles.tag}><span>#</span> Debugging</div>
+        <div className={styles.tag}><span>#</span> Software Development Lifecycle</div>
+        <div className={styles.tag}><span>#</span> Version Control</div>
+        <div className={styles.tag}><span>#</span> Git</div>
+        <div className={styles.tag}><span>#</span> GitHub</div>
+        <div className={styles.tag}><span>#</span> Relational Databases</div>
+        <div className={styles.tag}><span>#</span> UI/UX</div>
+        </div>
+      </div>
+    </div>   
+    <a href="resume/mummert.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
+    </div>
+    </section>
+    </div>
+    <section id="contact" className={styles.contact}>
+      <h2 className={styles.contactHeader}>Contact</h2>
+      <ContactForm />
+    </section>
     </main>
   );
 }

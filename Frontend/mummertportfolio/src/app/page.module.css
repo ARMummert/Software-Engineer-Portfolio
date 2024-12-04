@@ -223,7 +223,6 @@
       flex-direction: column;
       align-items: center;
     }
-
   }
 
   /********** ANIMATIONS ***********/
@@ -237,7 +236,16 @@
       opacity: 1;
     }
   }
-  
+
+  @keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   @keyframes bounce-left {
     0%, 20%, 50%, 80%, 100% {
       transform: translateX(0);
@@ -274,60 +282,39 @@
     }
   }
 
-  @keyframes scatter {
-    0% {
-      letter-spacing: 0;
-      opacity: 1;
-      transform-origin: right;
-    }
-    100% {
-      letter-spacing: 4rem;
-      opacity: 0;
-      transform-origin: right;
-    }
-  }
-  
-  @keyframes scatter-reverse {
-    
-    80% {
-      letter-spacing: 4rem;
-      transform: translateX(calc(100% + 20px)); /* Return characters from the right */
-      opacity: 1; 
-    }
-    100% {
-      transform: translateX(0); 
-    }
-  }
-
-  @keyframes crash {
-    0% {
-      opacity: 1;
-      top: 0;
-    }
-    50% {
-      top: -20px;
-    }
-    100% {
-      top: 0;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes typing {
-    from {
-      opacity: 0; 
-    }
-    to {
-      opacity: 1; 
-    }
-  }
-
   @keyframes scaleUp {
     0%, 100% {
       transform: scale(1);
     }
     50% {
       transform: scale(1.8);
+    }
+  }
+
+  @keyframes hinge {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: center;
+    }
+    20% {
+      transform: rotate(-80deg);
+      transform-origin: center;
+    }
+    40% {
+      transform: rotate(-60deg);
+      transform-origin: center;
+    }
+    60% {
+      transform: rotate(-80deg);
+      transform-origin: center;
+    }
+    80% {
+      transform: rotate(-60deg);
+      transform-origin: center;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: center;
     }
   }
 
@@ -339,7 +326,8 @@
       transform: rotate(0deg);
     }
   }
- 
+
+
    /* Styles */
    .title { 
     justify-content: center;
@@ -353,7 +341,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 35%;
     left: 50%; 
     transform: translate(-50%, -50%);
@@ -366,9 +353,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    transform-origin: center; 
   }
   
+  .headerTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    animation: ease-in hinge 1s;
+  }
+
   .text {
     display: flex;
     flex-direction: row;
@@ -382,6 +379,14 @@
     color: white;
   }
 
+  .motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in 4s;
+  }
+
   .line {
     display: flex;
     margin-bottom: 10px;
@@ -393,6 +398,8 @@
   }
 
   .projectsSection { 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -402,7 +409,7 @@
   .projectheader{
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 2.0rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -415,12 +422,12 @@
 
   .projectname {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .profilepic {
@@ -506,13 +513,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     flex-direction: column;
-    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     background-color: white;
     width: 100vw;
-    white-space: nowrap; 
-    overflow-x: scroll; /* Allow horizontal scrolling */
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
     padding: 0; 
     border: none; 
   }  
@@ -528,35 +533,34 @@
   .singleproject {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin: 20px;
     border-radius: 10px;
-    width: 330px;
-    height: 420px;
+    width: 350px;
+    height: 550px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.10);
+    overflow: hidden; 
   }
-   
+
   .singleproject img {
     display: flex;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
     margin-top: 20px;
     width: 300px;
-    height: 200px;
-    border-radius: 10px;
+    height: 250px;
     position: relative;
     z-index: 1;
   }
 
-  .img {
-    width: 100%;
-    height: 100%;
+  .singleproject:hover img {
+    transform: scale(1.4);
+    transition: transform 0.5s;
   }
 
   .projDesc {
@@ -654,40 +658,6 @@
     border-color: lindear-gradient(to right, #775FA8, #327CBD, #45B4D6, #71C9CF);
     padding: 2px;
   }
-  
-  .scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  .scrollButton {
-    display: flex;
-    gap: 10px;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    background-color: #45B4D6;
-    border-radius: 10%;
-    color: black;
-    width: 30px;
-    height: 30px;
-    
-  }
-  
-  .scrollButtons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .scrollButton:hover {
-    background-color: #775FA8;
-    color: white;
-    border-radius: 10%;
-  }
 
   .resumeLink {
     display: flex;
@@ -709,7 +679,7 @@
     grid-template-columns: repeat(10, 1fr);
     column-gap: 20px; 
     font-size: 1.0rem;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 35px;
     text-transform: uppercase;
     list-style: none;
@@ -730,13 +700,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    font-size: 1.3rem;
+    margin-top: 80px;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     color: white;
   }
+
+  .techItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .quote {
     display: flex;
     flex-direction: column;
@@ -793,3 +771,62 @@
     text-transform: uppercase;
     font-weight: 600;
   }
+
+  /* CSS Animation - See README for citation */
+  .loopSlider {
+    .inner {
+      display: flex;
+      width: fit-content;
+      animation-name: loop;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: var(--direction);
+      animation-duration: var(--duration);
+    }
+  }
+  
+  .tagList {
+    width: 40rem;
+    height: auto;
+    max-width: 90vw;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+    position: relative;
+    padding: 1.0rem 0;
+    overflow: hidden;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: #775FA8;
+    font-size: 0.9rem;
+    background-color: #71C9CF;
+    border-radius: 0.4rem;
+    padding: 0.7rem 1rem;
+    margin-right: 1rem; 
+    margin-bottom: 1rem;
+    font-weight: 600;
+    box-shadow: 
+      0 0.1rem 0.2rem rgb(0 0 0 / 20%),
+      0 0.1rem 0.5rem rgb(0 0 0 / 30%),
+      0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+    
+    }
+
+  .tag span {
+    font-size: 1.2rem;
+    color: #775FA8;
+  }
+  
+  .techscroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+ 
