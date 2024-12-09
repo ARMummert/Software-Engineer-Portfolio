@@ -5,7 +5,7 @@ import "./globals.css";
 import "./page.module.css";
 import React, { ReactNode } from 'react';
 import Footer from "./Footer";
-import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const Layout = ({ children }: { children: ReactNode }) => {
   if (!children) {
@@ -35,7 +35,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </main>
         <Footer>{children}</Footer>
       </body>
-      <GoogleAnalytics gaId="G-CF8SEBJKFN" />
+  
    </html>
   );
 };
