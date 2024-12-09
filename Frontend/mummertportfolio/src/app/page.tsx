@@ -36,7 +36,7 @@ export default function Home() {
       <div className={styles.headerTextWrapper}>
       <div className={styles.headerText}>
           <p className={styles.line}>AMY MUMMERT</p>
-          <p className={styles.line}>SOFTWARE ENGINEER</p>
+          <p className={styles.line2}>SOFTWARE ENGINEER</p>
       </div>
       </div>
       <div className={styles.motto}>
@@ -64,7 +64,6 @@ export default function Home() {
         </p>
          <p className={styles.techStack}>Skills</p>
         <div>
-   
       <div className={styles.tagList}>
       <div className={styles.loopSlider}  style={{ "--duration": "15951ms", "--direction": "normal" } as React.CSSProperties}>
         <div className={styles.inner}>
@@ -91,7 +90,7 @@ export default function Home() {
         <div className={styles.tag}><span>#</span> Docker</div>
         <div className={styles.tag}><span>#</span> RabbitMQ</div>
         <div className={styles.tag}><span>#</span> Heroku</div>
-        </div>
+      </div>
       </div>
       <div className={styles.loopSlider} style={{ "--duration": "10449ms", "--direction": "normal" } as React.CSSProperties}>
         <div className={styles.inner}>
@@ -104,17 +103,19 @@ export default function Home() {
         <div className={styles.tag}><span>#</span> GitHub</div>
         <div className={styles.tag}><span>#</span> Relational Databases</div>
         <div className={styles.tag}><span>#</span> UI/UX</div>
-        </div>
+      </div>
       </div>
     </div>   
     <a href="resume/mummert.pdf" target="_blank" className={styles.resumeLink}>View My Resume</a>
     </div>
     </section>
     </div>
+    <div className={styles.contactSection}>
     <section id="contact" className={styles.contact}>
       <h2 className={styles.contactHeader}>Contact</h2>
       <ContactForm />
     </section>
+    </div>
     </main>
   );
 }

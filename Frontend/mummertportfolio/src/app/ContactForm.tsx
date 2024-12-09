@@ -2,8 +2,6 @@
 import styles from "./ContactForm.module.css";
 import React, { useState } from 'react';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 interface FormData {
   name: string;
@@ -94,9 +92,6 @@ interface FormProps {
 
 const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
     <form className={styles.form} onSubmit={handleSubmit}>
-        <div>
-        <FontAwesomeIcon icon={faEnvelope} style={{ color: '#45B4D6', height: 100, width: 100}} />
-        </div>
         <p className={styles.contact}>Send me a message!</p>
         <label className={styles.name}>
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />

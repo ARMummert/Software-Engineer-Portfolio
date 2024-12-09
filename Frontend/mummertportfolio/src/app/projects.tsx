@@ -51,16 +51,7 @@ const ProjectComponent: React.FC = () => {
         built_with: 'REACT DJANGO JAVASCRIPT'
       },
       {
-        id: 3,
-        name: 'Dedicated Server Project',
-        description: 'A dedicated server project that includes a website and PostgreSQL Database.',
-        image_url: '/images/dedicatedserver.png',
-        demo_url: 'https://armummert.github.io/Dedicated-Server-Project/',
-        github_url: 'https://github.com/ARMummert/',
-        built_with: 'SHELL SCRIPT'
-      },
-      {
-        id: 4,
+        id: 5,
         name: 'Blog Web Application',
         description: 'A Blog website that allows users to create, edit, and delete blog posts using Sanity CMS.',
         image_url: '/images/bloghome.png',  
@@ -69,7 +60,7 @@ const ProjectComponent: React.FC = () => {
         built_with: 'REACT NEXTJS TYPESCRIPT SANITY'
       },
       {
-        id: 5,
+        id: 6,
         name: 'Baton Twirling Entry Form Database',
         description: 'The Baton Twirling Database stores entries for athletes attending baton twirling events.',
         image_url: '/images/databasehomepage.png',
@@ -78,7 +69,7 @@ const ProjectComponent: React.FC = () => {
         built_with: 'NODEJS EXPRESSJS MYSQL DATABASE'
       },
       {
-        id: 6,
+        id: 7,
         name: 'Dog Training App & Newsletter Microservice',
         description: 'A user friendly dog training application and newsletter microservice.',
         image_url: '/images/dogwebappportfolio2.png',
@@ -87,7 +78,7 @@ const ProjectComponent: React.FC = () => {
         built_with: 'PYTHON DJANGO DOCKER POSTGRESQL RABBITMQ'
       },
       {
-        id: 7,
+        id: 8,
         name: 'UX/UI Design - Note Taking App',
         description: 'A note taking app that includes a user friendly interface and design.',
         image_url: '/images/notetakingapp.png',
