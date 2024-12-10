@@ -107,7 +107,7 @@ const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
         <br />
         {errors && errors.message && <div>{errors.message}</div>}
         <div>
-        <button style={{ backgroundColor: '#45B4D6', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase'}} type="submit">
+        <button className="bg-black font-semibold uppercase" type="submit">
             Submit
         </button>
         </div>

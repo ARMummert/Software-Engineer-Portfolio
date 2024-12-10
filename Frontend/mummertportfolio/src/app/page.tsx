@@ -101,6 +101,11 @@ export default function Home() {
                   I&apos;d love to connect!
 
               </p>
+              <a href="resume/amy-mummert-resume.pdf" target="_blank"
+                 className="flex flex-row justify-center items-center rounded
+                      w-32 h-12 mt-20 text-white uppercase font-montserrat
+                      font-semibold bg-[#775FA8] hover:bg-[#45B4D6] text-#775FA8">My Resume
+              </a>
               <p className="flex flex-col justify-center items-center mt-20 text-2xl font-semibold text-white font-montserrat">Technologies
                   I&apos;ve worked with</p>
               <div>
@@ -131,9 +136,6 @@ export default function Home() {
                           </div>
                       </div>
                   </div>
-                  <a href="resume/mummert.pdf" target="_blank"
-                     className="flex justify-center items-center text-lg mt-12 text-#775FA8 uppercase hover:text-#327CBD hover:no-underline">View
-                      My Resume</a>
               </div>
           </section>
       </div>

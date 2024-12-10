@@ -159,26 +159,6 @@ input {
  
 }
 
-button {
-  padding: 0.8rem;
-  border-radius: 5px;
-  align-items: center;
-}
-
-button:hover {
-  background: black;
-  border: 1px solid rgba(var(--foreground-rgb), 0.5);
-}
-
-button:active {
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 0.1),
-    rgba(var(--tile-end-rgb), 0.1)
-  );
-  border: 1px solid rgba(var(--foreground-rgb), 0.7);
-}
-
 h2 {
   font-size: 1.0rem;
   margin-bottom: 1rem;

@@ -31,13 +31,14 @@
 .form button {
   padding: 10px;
   border: 1px solid rgba(var(--foreground-rgb), 0.3);
-  background: #327CBD; 
+  background: #775FA8;
+  border-radius: 5px;
   box-shadow: 0 0 1rem rgba(var(--foreground-rgb), 0.1);
   transition: background 200ms, border 200ms;
 }
 
 .form button:hover {
-    background: black;
+    background: #45B4D6;
     border: 1px solid rgba(var(--foreground-rgb), 0.5);
 }
 
