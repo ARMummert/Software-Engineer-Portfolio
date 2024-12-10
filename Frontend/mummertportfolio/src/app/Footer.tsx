@@ -29,7 +29,7 @@ const Footer = ({ children }: { children: ReactNode }) => {
   
     return (
       <>
-        <footer className={styles.footer}>
+        <footer className="fixed bottom-0 w-full h-[80px] bg-black text-white text-center z-10">
           <button
           onClick={scrollTop}
           style={{
@@ -49,10 +49,10 @@ const Footer = ({ children }: { children: ReactNode }) => {
         >
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
-        <p className={styles.footerText}>
+        <p className="flex justify-center items-center mt-3 p-1 text-[0.8rem] font-semibold font-montserrat uppercase">
           © 2024 Amy Mummert. All Rights Reserved.
         </p>
-        <p className={styles.footerText}>BUILT WITH - REACT NEXTJS TYPESCRIPT FASTAPI</p>
+        <p className="flex justify-center items-center mt-1 p-1 text-[0.8rem] font-semibold font-montserrat uppercase">BUILT WITH - REACT NEXTJS TYPESCRIPT TAILWINDCSS</p>
         </footer>
       </>
     );

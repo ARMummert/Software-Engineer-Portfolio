@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       animation: {
         hinge: 'hinge 1s ease-in',
-        typing: "typing 2s steps(20), blink .7s infinite"
+        typing: "typing 2s steps(20), blink .7s infinite",
+        loop: "loop 1s ease-in-out infinite"
       },
       keyframes: {
         hinge: {
@@ -34,6 +35,10 @@ module.exports = {
             borderColor: "white"
           }  
         },
+        loop: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-5px)' },
+        }
       },
     },
   },

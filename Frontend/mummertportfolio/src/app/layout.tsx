@@ -24,19 +24,22 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <title>Amy Mummert Portfolio</title>
       </head>
       <body>
-        <nav style={{ position: 'fixed', width: '100%', justifyContent: 'center', backgroundColor: '#000', padding: '5px 5px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
-          <a href="#home" style={{ margin: '0 10px', color: 'white' }}>Home</a>
-          <a href="#projects" style={{ margin: '0 10px', color: 'white' }}>Projects</a>
-          <a href="#about" style={{ margin: '0 10px', color: 'white'  }}>About</a>
-          <a href="#contact" style={{ margin: '0 10px', color: 'white'  }}>Contact</a>
-        </nav>   
-        <main>
+      <nav className="fixed w-full flex justify-right pr-6 bg-black p-1 shadow-md text-2xl font-montserrat">
+          <p className="flex w-full pl-8 text-2xl justify-left">Amy Mummert</p>
+          <div className="flex">
+          <a href="#home" className="mx-2 text-white">Home</a>
+          <a href="#projects" className="mx-2 text-white">Projects</a>
+          <a href="#about" className="mx-2 text-white">About</a>
+          <a href="#contact" className="mx-2 text-white">Contact</a>
+          </div>
+      </nav>
+      <main>
           {children}
-        </main>
-        <Footer>{children}</Footer>
+      </main>
+      <Footer>{children}</Footer>
       </body>
-  
-   </html>
+
+    </html>
   );
 };
 

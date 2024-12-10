@@ -1,6 +1,4 @@
-/* ContactForm.module.css 
-   SPA version 1.0 - 2024 - Amy Mummert - All Rights Reserved
-*/
+/* ContactForm.module.css */
 
 .form {
   display: flex;
@@ -50,40 +48,4 @@
     rgba(var(--tile-end-rgb), 0.1)
   );
   border: 1px solid rgba(var(--foreground-rgb), 0.7);
-}
-
-.name {
-    display: flex;
-    margin-top: 1rem;
-    
-}
-
-.email {
-    display: flex;
-}
-
-.message {
-    display: flex;
-    height: 6rem;
-}
-
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
-  margin-top: 1rem;
-}
-
-.name {
-    align-self: center;
-    justify-content: center;
-    color: white;
-}
-.error {
-    color: red;
-    font-size: 0.8rem;
-    text-align: center;
 }

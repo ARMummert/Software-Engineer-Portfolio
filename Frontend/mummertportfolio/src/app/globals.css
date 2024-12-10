@@ -200,8 +200,3 @@ p {
   font-size: 0.8rem;
   font-family: 'Montserrat', sans-serif;
 }
-
-span {
-  display: inline-block;
-  animation: typing 1s ease forwards;
-}

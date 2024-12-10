@@ -92,20 +92,20 @@ interface FormProps {
 
 const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
     <form className={styles.form} onSubmit={handleSubmit}>
-        <p className={styles.contact}>Send me a message!</p>
-        <label className={styles.name}>
+        <p className="flex flex-row justify-center items-center font-montserrat text-lg mt-4">Send me a message!</p>
+        <label className="flex mt-4 self-center justify-center text-white">
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
         </label>
         <br />
-        <label className={styles.email}>
+        <label className="flex">
             <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
         </label>
         <br />
-        <label className={styles.message}>
+        <label className="flex h-24">
             <input type="text" name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
         </label>
         <br />
-        {errors && errors.message && <div className={styles.error}>{errors.message}</div>}
+        {errors && errors.message && <div>{errors.message}</div>}
         <div>
         <button style={{ backgroundColor: '#45B4D6', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase'}} type="submit">
             Submit
