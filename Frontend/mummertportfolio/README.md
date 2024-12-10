@@ -39,3 +39,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Citations: 
 
 Infinite Scroll Animation - https://codepen.io/ykadosh/pen/XWBKjEV
+Typing Animation - https://play.tailwindcss.com/q6LZjWKr97

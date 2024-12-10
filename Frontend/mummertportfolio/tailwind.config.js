@@ -7,8 +7,7 @@ module.exports = {
     extend: {
       animation: {
         hinge: 'hinge 1s ease-in',
-        typing: 'typing 2s steps(100) forwards',
-        blinkcaret: 'blinkcaret 1.5s step-end infinite',
+        typing: "typing 2s steps(20), blink .7s infinite"
       },
       keyframes: {
         hinge: {
@@ -19,13 +18,21 @@ module.exports = {
           '100%': { transform: 'translateY(700px)', opacity: '0' },
         },
         typing: {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
+          '0%': { 
+            width: '0%', 
+            visibility: 'hidden' 
+          },
+          '100%': { 
+            width: '100%' 
+          },
         },
-        blinkcaret: {
-          '0%': { opacity: 1 },
-          '50%': { opacity: 0 },
-          '100%': { opacity: 1 },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
         },
       },
     },

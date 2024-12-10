@@ -34,9 +34,9 @@ export default function Home() {
     <main id="home" className="flex flex-col justify-between items-center bg-black w-screen">
       <section className={styles.top}>
       <div className="flex flex-col justify-center items-center absolute top-[35%] left-[50%]">
-      <div className="flex flex-col justify-center items-center absolute top-[35%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center uppercase font-montserrat font-semibold bg-clip-text text-transparent bg-gradient-to-l from-[#71C9CF] via-[#45B4D6] to-[#775FA8]">
-          <p className="mb-3 text-4xl">AMY MUMMERT</p>
-          <span className="mb-2 scroll-smooth overflow-hidden whitespace-nowrap text-4xl border-r-3 border-black animate-typing animation-blinkcaret">SOFTWARE ENGINEER </span>
+      <div className="flex flex-col justify-center items-center absolute top-[35%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center uppercase font-montserrat font-semibold ">
+          <p className="mb-3 text-4xl bg-clip-text text-transparent bg-gradient-to-l from-[#71C9CF] via-[#45B4D6] to-[#775FA8]">AMY MUMMERT</p>
+          <span className="mb-2 scroll-smooth overflow-hidden text-4xl border-r-3 border-black animate-typing whitespace-nowrap border-r-white pr-5 font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#71C9CF] via-[#45B4D6] to-[#775FA8]">SOFTWARE ENGINEER </span>
       </div>
       </div>
       <div className="flex flex-col justify-center items-center animate-slide-in duration-4000">
