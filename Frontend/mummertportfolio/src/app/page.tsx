@@ -32,7 +32,7 @@ const techIcons = [
 export default function Home() {
   return (
     <main id="home" className="flex flex-col justify-between items-center bg-black w-screen">
-      <section className={styles.top}>
+      <section className="flex justify-center items-center h-screen mt-2 text-1.5rem font-montserrat uppercase font-semibold">
       <div className="flex flex-col justify-center items-center absolute top-[35%] left-[50%]">
       <div className="flex flex-col justify-center items-center absolute top-[35%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center uppercase font-montserrat font-semibold ">
           <p className="mb-3 text-4xl bg-clip-text text-transparent bg-gradient-to-l from-[#71C9CF] via-[#45B4D6] to-[#775FA8]">AMY MUMMERT</p>
@@ -45,20 +45,20 @@ export default function Home() {
         </p>
       </div>
       </section>
-      <div className={styles.projectsSection}>
-      <section id="projects" className={styles.projects}>
-        <div className={styles.projectheader}>
-        <h2 className={styles.projectheader}>Projects</h2>
+      <div className="bg-white font-montserrat flex flex-col justify-center items-center">
+      <section id="projects">
+        <div>
+        <h2 className=" mt-36 font-montserrat text-3xl uppercase font-semibold text-black flex flex-row justify-center items-center">Projects</h2>
         </div>
         <div><ProjectComponent /></div>
       </section>
       </div>
       <div className={styles.aboutSection}>
-      <section id="about" className={styles.about}>
+      <section id="about" className="flex flex-col font-montserrat justify-center items-center text-white">
         <h2 className={styles.aboutHeader}>About</h2>
         <p className={styles.quote}>&quot;The only skill that will be important in the 21st century is the skill of learning new skills. Everything else will become obsolete over time.&quot;</p>
         <p className={styles.author}>- Peter Drucker</p>
-        <Image className={styles.profilepic} src="/images/profilepic.jpg" alt="Profile Picture" width={400} height={200} priority/>
+        <Image className="w-64 h-64 rounded-full mt-12" src="/images/profilepic.jpg" alt="Profile Picture" width={400} height={200} priority/>
         <p className={styles.aboutText}>
           I am a software engineer with a passion for creating and problem solving. I have experience with a variety of technologies, including JavaScript, React, Node.js, and Python. I am always eager to learn new things and take on new challenges. I am currently seeking new opportunities to grow and develop my skills as a software engineer. 
         </p>

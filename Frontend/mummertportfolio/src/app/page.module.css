@@ -234,62 +234,8 @@
   
 
 
-  
+ 
 
-  .line {
-    display: flex;
-    margin-bottom: 10px;
-    font-size: 3.0rem;
-  }
-  
-  .line2 {
-    margin-bottom: 10px;
-    overflow: hidden; 
-    white-space: nowrap; 
-    font-size: 3.0rem;
-    display: inline-block; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    border-right: 3px solid black; /* Simulates the cursor */
-    animation: typing 3s steps(25, end), blink-caret 0.5s step-end infinite;
-  }
-
-  .line span {
-    display: inline-block;
-  }
-
-  .projectsSection { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .projectheader{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    font-size: 2.0rem;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;  
-    color: black;
-    
-  }
-
-  .projectname {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 0.8rem;
-  }
 
   .profilepic {
     width: 250px;
@@ -622,18 +568,6 @@
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-  }
-
-  .top {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
   }
 
   /* CSS Animation - See README for citation */
