@@ -3,8 +3,8 @@
 // Main Page Component
 import ContactForm from "./ContactForm";
 import styles from "./page.module.css";
-import Image from "next/image";
 import ProjectComponent from "./projects";
+import './globals.css';
 import { FaLinkedin, FaGithub, FaGoogle, FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from "react-icons/fa";
 import { SiExpress, SiTailwindcss, SiNextdotjs, SiDjango, SiJavascript, SiExpo, SiTypescript, SiMysql, SiPostgresql, SiMariadb, SiHeroku, SiRabbitmq } from "react-icons/si";
 

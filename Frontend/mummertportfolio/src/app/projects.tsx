@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from 'react';
-import styles from './page.module.css'; 
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

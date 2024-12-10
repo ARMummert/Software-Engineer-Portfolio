@@ -3,6 +3,22 @@ module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  compilerOptions: {
+    types: ["@tailwindcss/typography"],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+
   theme: {
     extend: {
       animation: {
@@ -42,6 +58,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
