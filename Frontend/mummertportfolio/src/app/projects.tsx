@@ -99,24 +99,25 @@ const ProjectComponent: React.FC = () => {
   };
 
   return (
-    <div className={styles.projectsSection}>
-      <div className={styles.projectContainer} ref={projectContainerRef}>
+    <div className="h-auto">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(600px,1fr))] ml-10 flex-col justify-center items-center m-5 bg-black w-screen p-0 border-none ref={projectContainerRef}">
           {sampleProjects.map((project) => (
-            <div className={styles.singleproject} key={project.id}>
-              <h3 className={styles.projectname}>{project.name}</h3>
+            <div className="flex flex-col flex-wrap justify-center items-center m-5 rounded-lg w-[550px] h-[600px] bg-white font-montserrat text-center text-black shadow-[0px_0px_5px_5px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-t from-black via-[#775FA8] to-[#775FA8]" key={project.id}>
+              <h3 className="justify-center items-center mt-8 text-xl text-wrap text-white">{project.name}</h3>
               <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
-                <Image src={project.image_url} className={styles.img} alt="projectimg" width={600} height={400} />
+                <Image src={project.image_url} className="flex drop-shadow-[0px_0px_5px_rgba(0,0,0,0.2)] mt-5 w-[300px] h-[250px] relative z-10"
+                       alt="projectimg" width={600} height={400} />
               </a>
-              <p className={styles.projDesc}>{project.description}</p>
-              <div className={styles.buttonContainer}>
+              <p className="flex flex-col flex-wrap overflow-wrap-normal white-space-normal word-wrap-break mt-5 w-3/4 text-white text-xl">{project.description}</p>
+              <div>
                 <a href={formatUrl(project.demo_url)} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon className={styles.icon} icon={faPlay} />
+                  <FontAwesomeIcon className="text-white p-4 w-10 h-10 mt-4" icon={faPlay} />
                 </a>
                 <a href={formatUrl(project.github_url)} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+                  <FontAwesomeIcon className="text-white p-4 w-10 h-10 mt-4" icon={faGithub} />
                 </a>
               </div>
-              <div><p className={styles.built}>{project.built_with}</p></div>
+              <div><p className="text-white font-semibold">{project.built_with}</p></div>
             </div>
           ))}
       </div>

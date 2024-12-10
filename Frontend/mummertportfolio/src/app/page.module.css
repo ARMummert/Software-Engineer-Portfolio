@@ -117,71 +117,13 @@
     justify-content: center;
     
   }
-  
-  .projectContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    background-color: black;
-    width: 100vw;
-    padding: 0; 
-    border: none; 
-  }  
-
-  .projectContainer::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
-  }
-  
-  .icon:hover {
-    color: #775FA8;
-  }
-
-  .singleproject {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    border-radius: 10px;
-    width: 350px;
-    height: 550px;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: black;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.10);
-    overflow: hidden; 
-  }
-
-  .singleproject img {
-    display: flex;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-    margin-top: 20px;
-    width: 300px;
-    height: 250px;
-    position: relative;
-    z-index: 1;
-  }
 
   .singleproject:hover img {
     transform: scale(1.4);
     transition: transform 0.5s;
   }
 
-  .projDesc {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: break-word; 
-    white-space: normal;
-    word-wrap: break-word;
-    margin-top: 20px;
-    width: 70%;
-  }
-  
+
   .built {
     color: black;
     font-weight: 600;
