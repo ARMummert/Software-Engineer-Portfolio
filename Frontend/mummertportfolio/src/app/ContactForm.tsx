@@ -92,7 +92,7 @@ interface FormProps {
 
 const Form = ({ handleSubmit, handleChange, formData, errors }: FormProps) => (
     <form className={styles.form} onSubmit={handleSubmit}>
-        <p className="flex flex-row justify-center items-center font-montserrat text-lg mt-4">Send me a message!</p>
+        <p className="flex flex-row justify-center items-center text-black font-montserrat text-lg mt-4">Send me a message!</p>
         <label className="flex mt-4 self-center justify-center text-white">
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
         </label>

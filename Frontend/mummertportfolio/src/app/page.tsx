@@ -140,8 +140,8 @@ export default function Home() {
           </section>
       </div>
         <section id="contact"
-                 className="flex flex-col items-center justify-between w-full px-6 py-24 mt-32 mb-64 bg-black text-white uppercase font-montserrat">
-            <h2 className="flex flex-row items-center justify-center text-4xl uppercase font-montserrat font-semibold mt-12">Contact</h2>
+                 className="bg-white flex flex-col items-center justify-between w-full px-6 py-24 mt-32 mb-64 text-white uppercase font-montserrat">
+            <h2 className="flex flex-row text-black items-center justify-center text-4xl uppercase font-montserrat font-semibold mt-12">Contact</h2>
             <ContactForm/>
         </section>
     </main>

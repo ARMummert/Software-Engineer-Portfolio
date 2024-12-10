@@ -25,12 +25,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
       </head>
       <body>
       <nav className="fixed w-full flex justify-right pr-6 bg-black p-1 shadow-md text-2xl font-montserrat">
-          <p className="flex w-full pl-8 text-2xl justify-left">Amy Mummert</p>
+          <p className="flex w-full pl-8 text-2xl font-semibold justify-left">Amy Mummert</p>
           <div className="flex">
-          <a href="#home" className="mx-2 text-white">Home</a>
-          <a href="#projects" className="mx-2 text-white">Projects</a>
-          <a href="#about" className="mx-2 text-white">About</a>
-          <a href="#contact" className="mx-2 text-white">Contact</a>
+          <a href="#home" className="mx-2 text-white font-semibold">Home</a>
+          <a href="#projects" className="mx-2 text-white font-semibold">Projects</a>
+          <a href="#about" className="mx-2 text-white font-semibold">About</a>
+          <a href="#contact" className="mx-2 text-white font-semibold">Contact</a>
           </div>
       </nav>
       <main>
